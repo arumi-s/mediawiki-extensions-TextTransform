@@ -1,0 +1,32 @@
+{
+	"name": "TextTransform",
+	"version": "1.0.0",
+	"author": ["Sakura Arumi"],
+	"url": "https://github.com/arumi-s/mediawiki-extensions-TextTransform",
+	"descriptionmsg": "texttransform_desc",
+	"license-name": "MIT",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"ExtensionMessagesFiles": {
+		"TextTransformMagic": "TextTransform.i18n.magic.php"
+	},
+	"MessagesDirs": {
+		"TextTransform": ["i18n"]
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "TextTransformHookHandler",
+		"SMW::DataType::initTypes": "TextTransformHookHandler"
+	},
+	"HookHandlers": {
+		"TextTransformHookHandler": {
+			"class": "MediaWiki\\Extension\\TextTransform\\Hooks"
+		}
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\TextTransform\\": "includes/"
+	},
+	"ServiceWiringFiles": ["includes/ServiceWiring.php"],
+	"manifest_version": 2
+}

@@ -1,0 +1,7 @@
+{
+	"@metadata": {
+		"authors": ["Sakura Arumi"]
+	},
+	"texttransform_desc": "Provides text transform utilities",
+	"smw-type-shk": "\"$1\" is a datatype to represent a search key."
+}
